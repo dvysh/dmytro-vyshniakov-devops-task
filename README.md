@@ -23,6 +23,8 @@ Docker container print all the information to logs every 5 second by default.
 
 ## Running the script into Docker container
 ### Basic 
+
+Compile the image and run a container:  
 *$docker build -t metrics .*  
 *$docker run --rm -d metrics*
 
