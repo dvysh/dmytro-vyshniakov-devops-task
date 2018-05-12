@@ -1,26 +1,36 @@
 # dmytro-vyshniakov-devops-task
 GL DevOps ProCamp entry task
 
-# Metrics. Overview
+# Metrics collection script. Overview
 
-Python script which prints basic information about your OS to console.  
+Python script which prints basic information about an operation system to console.  
 Docker container print all the information to logs every 5 second by default.
 
 ## Installation 
-### Basic 
 
 *$git clone https://github.com/dvysh/dmytro-vyshniakov-devops-task.git*  
 *$cd dmytro-vyshniakov-devops-task*  
+
+### Running the python script by itself
+
+**$./metrics <cpu|mem|proc|all> **  
+- 'cpu' - CPU information  
+- 'mem' - Memory and Swap information  
+- 'proc' - Information about system's processes  
+- 'all' - all above, one by one  
+
+## Running the script into Docker container
+### Basic 
 *$docker build -t metrics .*  
 *$docker run --rm -d metrics*
 
 Then you can see the basic system information in the container logs refreshed every 5 sec:  
-**$docker logs <CONTAINER_ID> -f**
+**$docker logs -f <CONTAINER_ID>**
 
 ### Advanced settings
 
-You can define updating time and type of the system information by adding variables:  
-- **'TIME'** - the informations updating time, seconds (defailt 5 sec)  
+You can define updating time and type of the system information by defining variables:  
+- **'TIME'** - updating time, seconds (default 5 sec)  
 - **'MTR'** -  listed metrics:   
    'cpu' - CPU information  
    'mem' - Memory and Swap information  
