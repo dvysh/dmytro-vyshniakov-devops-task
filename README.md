@@ -1,7 +1,9 @@
-# dmytro-vyshniakov-devops-task
+### dmytro-vyshniakov-devops-task
 GL DevOps ProCamp entry task
 
-# Metrics collection script. Overview
+# Metrics collection script  
+
+## Overview
 
 Python script which prints basic information about an operation system to console.  
 Docker container print all the information to logs every 5 second by default.
