@@ -1,9 +1,7 @@
 FROM python:2
 MAINTAINER Dmytro Vyshniakov <dmytro.vyshniakov@gmail.com>
 
-RUN pip install psutil
-
-RUN mkdir /proc-host
+RUN pip install psutil && mkdir /proc-host
 VOLUME ["/proc-host"]
 
 ARG TIME=5
