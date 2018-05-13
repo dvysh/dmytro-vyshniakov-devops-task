@@ -6,7 +6,7 @@ GL DevOps ProCamp entry task
 ## Overview
 
 Python script which prints basic information about an operation system to console.  
-Docker container print all the information to logs every 5 second by default.
+Docker container prints all the information to logs every 5 second by default.
 
 ## Installation 
 
@@ -21,7 +21,7 @@ Docker container print all the information to logs every 5 second by default.
 - 'proc' - Information about system's processes  
 - 'all' - all above, one by one  
 
-## Running the script into Docker container
+## Running the script into a Docker container
 ### Basic 
 
 Compile the image and run a container:  
