@@ -20,7 +20,7 @@ stages:
   - job: Build
     displayName: Build
     pool:
-      vmImage: ubuntu-latest
+      vmImage: dockeragent
     steps:
     - task: Docker@2
       displayName: Build an image
