@@ -1,5 +1,5 @@
 FROM python:2
-MAINTAINER Dmytro Vyshniakov <dmytro.vyshniakov@gmail.com>
+MAINTAINER Dmytro Vyshniakov <dv@gmail.com>
 
 RUN pip install psutil && mkdir /proc-host
 VOLUME ["/proc-host"]
